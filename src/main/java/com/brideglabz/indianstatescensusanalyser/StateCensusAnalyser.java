@@ -9,7 +9,11 @@ public class StateCensusAnalyser {
     File file = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
     CSVStateCensus census;
     List<CSVStateCensus> censuses = new ArrayList<>();
-    public List<CSVStateCensus> readCSV() throws IOException, CsvException {
+    public List<CSVStateCensus> readCSV(File file) throws CustomException, IOException, CsvException {
+        String expectedType = "csv";
+        int index = file.toString().lastIndexOf('.');
+        String actualType = file.toString().substring(index+1);
+
         try {
             if(file.exists()) {
                 FileReader fileReader = new FileReader(file);
@@ -28,12 +32,15 @@ public class StateCensusAnalyser {
                     censuses.add(census);
                 }
             }
+            if(!expectedType.equals(actualType)){
+                throw new CustomException(CustomException.ExceptionType.FILE_TYPE_MISMATCH, "Oops!, it seems the file type doesn't match");
+            }
             else {
                 throw new CustomException(CustomException.ExceptionType.FILE_NOT_FOUND, "Oops!, it seems the file doesn't exist");
             }
         }
         catch (IOException e) {
-            System.out.println(e.getMessage());
+            e.getStackTrace();
         }
         return censuses;
     }
