@@ -1,5 +1,4 @@
 package com.brideglabz.indianstatescensusanalyser;
-
 public class CSVStateCensus {
     private int sNo;
     private String state;

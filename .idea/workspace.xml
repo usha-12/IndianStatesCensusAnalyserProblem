@@ -7,9 +7,6 @@
     <list default="true" id="85363cca-7311-44b1-b266-1e35c225f8be" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStateCensus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStateCensus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,26 +33,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowExcelReader.ShowToolbar": "false",
-    "last_opened_file_path": "C:/Users/User/Desktop/243-rfp/IndianStatesCensusAnalyser/src/main"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\243-rfp\IndianStatesCensusAnalyser\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\Desktop\243-rfp\IndianStatesCensusAnalyser\src\main\resources" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.Main" />
       <module name="IndianStatesCensusAnalyser" />
       <extension name="coverage">
         <pattern>
@@ -69,7 +46,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -94,5 +70,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/IndianStatesCensusAnalyser$StateCensusAnalyserTest_readCSV.ic" NAME="StateCensusAnalyserTest.readCSV Coverage Results" MODIFIED="1677182944248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.brideglabz.indianstatescensusanalyser.*</FILTER>
+    </SUITE>
   </component>
 </project>
