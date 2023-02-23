@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85363cca-7311-44b1-b266-1e35c225f8be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusData.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CustomException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStateCensus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStateCensus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/StateCensusData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/StateCensusData.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2M9URlkYbfD97kWDI1GiC5UNDcu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -75,10 +75,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
-      <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
-      <option name="METHOD_NAME" value="readCSV" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
