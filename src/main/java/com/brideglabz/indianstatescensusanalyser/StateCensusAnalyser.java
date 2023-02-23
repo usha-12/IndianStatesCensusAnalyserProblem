@@ -1,20 +1,16 @@
 package com.brideglabz.indianstatescensusanalyser;
-
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
-
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
 public class StateCensusAnalyser {
+    File file = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
     CSVStateCensus census;
     List<CSVStateCensus> censuses = new ArrayList<>();
 
-    public List<CSVStateCensus> readCSV(File file) throws IOException, CsvException {
+    public List<CSVStateCensus> readCSV() throws IOException, CsvException {
         try {
             FileReader fileReader = new FileReader(file);
             CSVReader csvReader = new CSVReaderBuilder(fileReader).withSkipLines(1).build();

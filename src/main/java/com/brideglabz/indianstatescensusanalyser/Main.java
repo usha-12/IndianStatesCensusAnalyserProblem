@@ -1,16 +1,8 @@
 package com.brideglabz.indianstatescensusanalyser;
-
-import com.opencsv.exceptions.CsvException;
-
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-public class Main {
-    StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
-    File file = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
     Scanner scanner = new Scanner(System.in);
     CSVStateCensus census;
     List<CSVStateCensus> censuses = new ArrayList<>();
@@ -19,7 +11,6 @@ public class Main {
         int option = scanner.nextInt();
         switch (option) {
             case 1:
-                censuses = stateCensusAnalyser.readCSV(file);
                 menu();
                 break;
             case 2:
