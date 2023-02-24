@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85363cca-7311-44b1-b266-1e35c225f8be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" afterDir="false" />
+      
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
