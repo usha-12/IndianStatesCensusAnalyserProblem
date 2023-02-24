@@ -86,6 +86,7 @@ public class CSVStateCensus {
     public void setLiteracy(double literacy) {
         this.literacy = literacy;
     }
+
     public String toString() {
         return "S.No: "+sNo+", State: "+state+", Population: "+population+", Increase(%) : "+increase
                 +", Area(Km2): "+area+", Density: "+density+" Sex Ratio: "+sexRatio+", Literacy: "+literacy;

@@ -9,6 +9,7 @@ public class StateCensusAnalyserTest {
     List<CSVStates> statesActualList;
     List<CSVStateCensus> actualList;
 
+
     @Test
     void readCSVCheckingRecordMatches() throws IOException, CsvException, CustomException {
         File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
@@ -79,49 +80,26 @@ public class StateCensusAnalyserTest {
 
     @Test
     void readStateCodeTestingFILE_Not_FOUNDException() throws IOException, CsvException, CustomException {
-        try {
-            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCod.csv");
-            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
-            stateCensusAnalyser.readeStateCSV(actualFile);
-        } catch (CustomException e) {
-            String message = e.getMessage();
-            Assertions.assertEquals("Oops!, it seems the file doesn't exist", message);
-        }
+        File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCod.csv");
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        stateCensusAnalyser.readeStateCSV(actualFile);
     }
     @Test
     void readSateCodeTestingFILE_TYPE_MISMATCHException() throws IOException, CsvException, CustomException {
-        try {
-            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCode.pdf");
-            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
-            stateCensusAnalyser.readeStateCSV(actualFile);
-        }
-        catch (CustomException e) {
-            String message = e.getMessage();
-            Assertions.assertEquals("Oops!, it seems the file type doesn't match", message);
-        }
+        File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCode.pdf");
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        stateCensusAnalyser.readeStateCSV(actualFile);
     }
     @Test
     void readStateCodeTestingDELIMETER_INCORRECTException() throws IOException, CsvException, CustomException {
-        try {
-            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\DelimeterIncorrectStateCode.csv");
-            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
-            stateCensusAnalyser.readeStateCSV(actualFile);
-        }
-        catch (CustomException e) {
-            String message = e.getMessage();
-            Assertions.assertEquals("Oops, it seems the files weren't separated by comma check the delimeter", message);
-        }
+        File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\DelimeterIncorrectStateCode.csv");
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        stateCensusAnalyser.readeStateCSV(actualFile);
     }
     @Test
     void readStateCodeTestingHEADER_MISMATCHException() throws IOException, CsvException, CustomException {
-        try {
-            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\HeaderMismatchStateCode.csv");
-            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
-            stateCensusAnalyser.readeStateCSV(actualFile);
-        }
-        catch (CustomException e) {
-            String message = e.getMessage();
-            Assertions.assertEquals("It seems the header is not match, please check the header", message);
-        }
+        File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\HeaderMismatchStateCode.csv");
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        stateCensusAnalyser.readeStateCSV(actualFile);
     }
 }

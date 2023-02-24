@@ -4,6 +4,7 @@ public class CustomException extends Exception{
         FILE_NOT_FOUND,
         FILE_TYPE_MISMATCH,
         DELIMETER_INCORRECT,
+
         HEADER_MISMATCH;
     }
     final ExceptionType type;

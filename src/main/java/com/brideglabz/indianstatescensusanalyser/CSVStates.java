@@ -34,8 +34,7 @@ public class CSVStates {
     public void setStatecode(String stateCode) {
         this.stateCode = stateCode;
     }
-
     public String toString() {
-        return "SNo: " + code + ", State: " + state + ", StateCode: " + stateCode;
+        return "SNo: "+code+", State: "+state+", StateCode: "+stateCode;
     }
 }
