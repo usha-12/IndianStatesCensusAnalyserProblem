@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 public class StateCensusAnalyserTest {
-    List<CSVStateCensus> expectedList;
+    List<CSVStates> statesActualList;
     List<CSVStateCensus> actualList;
     @Test
     void readCSVCheckingRecordMatches() throws IOException, CsvException, CustomException {
@@ -44,7 +44,7 @@ public class StateCensusAnalyserTest {
     @Test
     void readCSVTestingDELIMETER_INCORRECTException() throws IOException, CsvException, CustomException {
         try {
-            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
+            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\DelimeterIncorrectData.csv");
             StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
             stateCensusAnalyser.readCSV(actualFile);
         }
@@ -64,5 +64,14 @@ public class StateCensusAnalyserTest {
             String message = e.getMessage();
             Assertions.assertEquals("It seems the header is not match, please check the header", message);
         }
+    }
+    @Test
+    void readStateCodeCheckingRecordMatches() throws IOException, CsvException, CustomException {
+        File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCode.csv");
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        statesActualList = stateCensusAnalyser.readeStateCSV(actualFile);
+        int actual = statesActualList.size();
+        int expected = 35;
+        Assertions.assertEquals(actual, expected);
     }
 }
