@@ -75,7 +75,6 @@ public class CSVStateCensus {
     public void setSexRatio(int sexRatio) {
         this.sexRatio = sexRatio;
     }
-
     public double getLiteracy() {
         return literacy;
     }
