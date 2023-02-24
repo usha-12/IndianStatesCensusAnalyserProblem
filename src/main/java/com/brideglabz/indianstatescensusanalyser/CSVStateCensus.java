@@ -20,6 +20,9 @@ public class CSVStateCensus {
         this.literacy = literacy;
     }
 
+    public CSVStateCensus(int sNo, String state, String stateCode) {
+    }
+
     public int getsNo() {
         return sNo;
     }
@@ -75,13 +78,15 @@ public class CSVStateCensus {
     public void setSexRatio(int sexRatio) {
         this.sexRatio = sexRatio;
     }
+
     public double getLiteracy() {
         return literacy;
     }
 
     public void setLiteracy(double literacy) {
         this.literacy = literacy;
-    }public String toString() {
+    }
+    public String toString() {
         return "S.No: "+sNo+", State: "+state+", Population: "+population+", Increase(%) : "+increase
                 +", Area(Km2): "+area+", Density: "+density+" Sex Ratio: "+sexRatio+", Literacy: "+literacy;
     }

@@ -9,6 +9,8 @@ public class StateCensusAnalyser {
     File file = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
     CSVStateCensus census;
     List<CSVStateCensus> censuses = new ArrayList<>();
+    CSVStates csvStates;
+    List<CSVStates> states = new ArrayList<>();
     FileReader fileReader;
     public List<CSVStateCensus> readCSV(File file) throws CustomException, IOException, CsvException {
         //checking extension
@@ -73,5 +75,18 @@ public class StateCensusAnalyser {
             throw new CustomException(CustomException.ExceptionType.FILE_NOT_FOUND, "Oops!, it seems the file doesn't exist");
         }
         return censuses;
+    }
+    public List<CSVStates> readeStateCSV(File file) throws IOException, CsvException {
+        FileReader fileReader = new FileReader(file);
+        CSVReader csvReader = new CSVReaderBuilder(fileReader).withSkipLines(1).build();
+        List<String[]> allData = csvReader.readAll();
+        for (String[] row : allData) {
+            int sNo = Integer.parseInt(row[0]);
+            String state = row[1];
+            String stateCode = row[2];
+            csvStates = new CSVStates(sNo, state, stateCode);
+            states.add(csvStates);
+        }
+        return states;
     }
 }

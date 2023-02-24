@@ -1,5 +1,5 @@
 package com.brideglabz.indianstatescensusanalyser;
-public class CustomException extends Exception {
+public class CustomException extends Exception{
     public enum ExceptionType {
         FILE_NOT_FOUND,
         FILE_TYPE_MISMATCH,
