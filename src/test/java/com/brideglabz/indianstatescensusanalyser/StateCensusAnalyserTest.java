@@ -100,4 +100,16 @@ public class StateCensusAnalyserTest {
             Assertions.assertEquals("Oops!, it seems the file type doesn't match", message);
         }
     }
+    @Test
+    void readStateCodeTestingDELIMETER_INCORRECTException() throws IOException, CsvException, CustomException {
+        try {
+            File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\DelimeterIncorrectStateCode.csv");
+            StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+            stateCensusAnalyser.readeStateCSV(actualFile);
+        }
+        catch (CustomException e) {
+            String message = e.getMessage();
+            Assertions.assertEquals("Oops, it seems the files weren't separated by comma check the delimeter", message);
+        }
+    }
 }
