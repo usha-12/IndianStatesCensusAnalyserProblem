@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85363cca-7311-44b1-b266-1e35c225f8be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/DelimeterIncorrectData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/HeaderMismatch.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/StateCode.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStateCensus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CSVStateCensus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/CustomException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +37,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StateCensusAnalyserTest.readStateCodeCheckingRecordMatches">
+  <component name="RunManager" selected="JUnit.StateCensusAnalyserTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.Main" />
       <module name="IndianStatesCensusAnalyser" />
@@ -56,6 +47,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StateCensusAnalyserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndianStatesCensusAnalyser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brideglabz.indianstatescensusanalyser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
+      <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -71,22 +77,6 @@
       <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
       <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
       <option name="METHOD_NAME" value="readCSVTestingDELIMETER_INCORRECTException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateCensusAnalyserTest.readCSVTestingFILE_TYPE_MISMATCHException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndianStatesCensusAnalyser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.brideglabz.indianstatescensusanalyser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
-      <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
-      <option name="METHOD_NAME" value="readCSVTestingFILE_TYPE_MISMATCHException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StateCensusAnalyserTest" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readStateCodeCheckingRecordMatches" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingHEADER_MISMATCHException" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingDELIMETER_INCORRECTException" />
-        <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingFILE_TYPE_MISMATCHException" />
       </list>
     </recent_temporary>
   </component>
