@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85363cca-7311-44b1-b266-1e35c225f8be" name="Changes" comment="">
+
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" afterDir="false" />
       
       <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" afterDir="false" />
@@ -40,7 +41,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StateCensusAnalyserTest.readStateCodeTestingDELIMETER_INCORRECTException">
+  <component name="RunManager" selected="JUnit.StateCensusAnalyserTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.Main" />
       <module name="IndianStatesCensusAnalyser" />
@@ -119,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StateCensusAnalyserTest" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readStateCodeTestingDELIMETER_INCORRECTException" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readSateCodeTestingFILE_TYPE_MISMATCHException" />
-        <item itemvalue="JUnit.StateCensusAnalyserTest" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readStateCodeCheckingRecordMatches" />
         <item itemvalue="Application.Main" />
       </list>
