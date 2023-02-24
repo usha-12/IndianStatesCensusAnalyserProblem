@@ -2,12 +2,11 @@ package com.brideglabz.indianstatescensusanalyser;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.exceptions.CsvException;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 public class StateCensusAnalyser {
+    File file = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensusData.csv");
     CSVStateCensus census;
     List<CSVStateCensus> censuses = new ArrayList<>();
     CSVStates csvStates;
@@ -28,6 +27,30 @@ public class StateCensusAnalyser {
                 //checking delimeter is correct
                 if(row.length < 2) {
                     throw new CustomException(CustomException.ExceptionType.DELIMETER_INCORRECT, "Oops, it seems the files weren't separated by comma check the delimeter");
+                    
+
+        try {
+            if(file.exists()) {
+                FileReader fileReader = new FileReader(file);
+                CSVReader csvReader = new CSVReaderBuilder(fileReader).withSkipLines(1).build();
+                List<String[]> allData = csvReader.readAll();
+                for (String[] row : allData) {
+                    if(row.length < 2) {
+                        throw new CustomException(CustomException.ExceptionType.DELIMETER_INCORRECT, "Oops, it seems the files weren't separated by comman check the delimeter");
+                    }
+                    else {
+                        int sNo = Integer.parseInt(row[0]);
+                        String state = row[1];
+                        long population = Long.parseLong(row[2]);
+                        double increase = Double.parseDouble(row[3]);
+                        long area = Long.parseLong(row[4]);
+                        int density = Integer.parseInt(row[5]);
+                        int sexRatio = Integer.parseInt(row[6]);
+                        double literacy = Double.parseDouble(row[7]);
+                        census = new CSVStateCensus(sNo, state, population, increase, area, density, sexRatio, literacy);
+                        censuses.add(census);
+                    }
+
                 }
                 if(!header[0].equals("Code") || !header[1].equals("State") || !header[2].equals("Population") || !header[3].equals("Increase %") || !header[4].equals("Area Km2")
                         || !header[5].equals("Density") || !header[6].equals("Sex-Ratio") || !header[7].equals("Literacy")) {
