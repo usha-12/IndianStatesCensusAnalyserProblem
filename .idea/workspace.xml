@@ -39,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.StateCensusAnalyserTest.readCSVTestingDELIMETER_INCORRECTException">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.Main" />
       <module name="IndianStatesCensusAnalyser" />
@@ -64,22 +64,6 @@
       <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
       <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StateCensusAnalyserTest.readCSVCheckingRecordMatches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IndianStatesCensusAnalyser" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.brideglabz.indianstatescensusanalyser.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
-      <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
-      <option name="METHOD_NAME" value="readCSVCheckingRecordMatches" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,13 +100,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StateCensusAnalyserTest.readCSVTestingHEADER_MISMATCHException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IndianStatesCensusAnalyser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brideglabz.indianstatescensusanalyser.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brideglabz.indianstatescensusanalyser" />
+      <option name="MAIN_CLASS_NAME" value="com.brideglabz.indianstatescensusanalyser.StateCensusAnalyserTest" />
+      <option name="METHOD_NAME" value="readCSVTestingHEADER_MISMATCHException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingDELIMETER_INCORRECTException" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingHEADER_MISMATCHException" />
+        <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingDELIMETER_INCORRECTException" />
         <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVTestingFILE_TYPE_MISMATCHException" />
         <item itemvalue="JUnit.StateCensusAnalyserTest" />
-        <item itemvalue="JUnit.StateCensusAnalyserTest.readCSVCheckingRecordMatches" />
       </list>
     </recent_temporary>
   </component>

@@ -34,6 +34,7 @@ public class Main {
     public static void main(String[] args) throws CsvException, IOException, CustomException {
         System.out.println("Welcome to Indian state census analyser program");
         Main main = new Main();
+
         main.menu();
     }
 }
