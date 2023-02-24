@@ -15,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/indianstatescensusanalyser/StateCensusAnalyserTest.java" afterDir="false" />
+      
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
