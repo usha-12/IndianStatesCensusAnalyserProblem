@@ -24,7 +24,7 @@ public class StateCensusAnalyserTest {
     }
     @Test
     void readCSVCheckingCustomException() throws IOException, CsvException, CustomException {
-        File actualFile = new File("C:\\Users\\Sourav Prasanna\\IdeaProjects\\Day29-IndianStateCensusAnalyser\\src\\main\\resources\\StateCensus.csv");
+        File actualFile = new File("C:\\Users\\User\\Desktop\\243-rfp\\IndianStatesCensusAnalyser\\src\\main\\resources\\StateCensus.csv");
         StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
         CustomException customException = assertThrows(CustomException.class, () -> stateCensusAnalyser.readCSV(actualFile));
         Assertions.assertEquals("Oops!, it seems the file doesn't exist", customException.getMessage());
